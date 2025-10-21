@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistema de Gestión Escolar</title>
+  <link rel="stylesheet" href="estilo.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <img src="logo-instituto-de-educacion-superior-tecnologico-publico-recuay.webp" alt="Logo" class="logo" />
+    <h1>🎓 Sistema de Gestión Escolar</h1>
+  </header>
+
+  <main class="container">
+
+    <!-- 🔹 Registro -->
+    <section class="panel glass">
+      <h2>Registro de Datos</h2>
+
+      <div class="botones-principales">
+        <button id="btn-estudiante">👩‍🎓 Registrar Estudiante</button>
+        <div id="form-estudiante" class="zona-formulario"></div>
+
+        <button id="btn-asignatura">📘 Registrar Asignatura</button>
+        <div id="form-asignatura" class="zona-formulario"></div>
+
+        <button id="btn-notas">📝 Registrar Notas</button>
+        <div id="form-notas" class="zona-formulario"></div>
+      </div>
+    </section>
+
+    <!-- 🔹 Visualización -->
+    <section class="panel glass">
+      <h2>Visualizar Datos</h2>
+
+      <div class="botones-ver">
+        <button id="btn-ver-estudiantes">👀 Ver Estudiantes</button>
+        <div id="tabla-estudiantes" class="zona-tabla"></div>
+
+        <button id="btn-ver-asignaturas">📚 Ver Asignaturas</button>
+        <div id="tabla-asignaturas" class="zona-tabla"></div>
+
+        <button id="btn-ver-notas">📊 Ver Notas</button>
+        <div id="tabla-notas" class="zona-tabla"></div>
+      </div>
+    </section>
+
+    <div id="mensaje"></div>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Sistema Escolar | Desarrollado por SILSA MADIAN TRUJILLO ESPINOZA</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

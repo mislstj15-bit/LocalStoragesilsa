@@ -1,0 +1,182 @@
+/* -------------------- */
+/* GENERAL */
+/* -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  color: #2c3e50;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* -------------------- */
+/* HEADER */
+/* -------------------- */
+.header {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.logo {
+  height: 60px;
+}
+
+.header h1 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* -------------------- */
+/* CONTAINER */
+/* -------------------- */
+.container {
+  flex: 1;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* -------------------- */
+/* PANEL CON EFECTO VIDRIO */
+/* -------------------- */
+.panel.glass {
+  background: rgba(255,255,255,0.3);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.panel h2 {
+  color: #003366;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* -------------------- */
+/* BOTONES */
+/* -------------------- */
+button {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border: none;
+  padding: 15px 25px;
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* -------------------- */
+/* FORMULARIOS */
+/* -------------------- */
+form {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px auto;
+  width: 80%;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  animation: fadeIn 0.4s ease;
+}
+
+form h3 {
+  color: #0072ff;
+  margin-bottom: 15px;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: linear-gradient(90deg, #00b09b, #96c93d);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+form button:hover {
+  transform: scale(1.05);
+}
+
+/* -------------------- */
+/* TABLAS */
+/* -------------------- */
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  animation: fadeIn 0.4s ease;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #0072ff;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f8ff;
+}
+
+/* -------------------- */
+/* EFECTOS */
+/* -------------------- */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+#mensaje {
+  text-align: center;
+  font-weight: bold;
+  color: green;
+  margin-top: 20px;
+}
+
+/* -------------------- */
+/* FOOTER */
+/* -------------------- */
+.footer {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  box-shadow: 0 -4px 15px rgba(0,0,0,0.3);
+}
